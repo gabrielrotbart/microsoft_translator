@@ -55,6 +55,14 @@ translator.translate(spanish,"es","en","text/html")
    # =>  "until then girl"
 ```
 
+To detect languages, pass in text block to detecth method
+
+```ruby
+spanish = "hasta luego muchacha"
+translator.detect(spanish)
+   # =>  "es"
+```
+
 That's about it!  This is a list of the supported languages by the Microsoft 
 Translate API http://www.microsofttranslator.com/help/?FORM=R5FD and
 here are all the language codes as a helpful reference.
