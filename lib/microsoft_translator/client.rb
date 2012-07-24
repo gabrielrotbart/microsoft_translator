@@ -42,6 +42,15 @@ module MicrosoftTranslator
       puts hash
       hash
     end
+    
+    def detect_params(text)
+      hash = base_params
+      hash.store(:params,{
+        "text" => text
+      })
+      puts hash
+      hash
+    end
 
     def parse_xml(xml)
       xml_doc = Nokogiri::XML(xml)
