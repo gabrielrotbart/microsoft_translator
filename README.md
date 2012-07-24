@@ -55,7 +55,7 @@ translator.translate(spanish,"es","en","text/html")
    # =>  "until then girl"
 ```
 
-To detect languages, pass in text block to detecth method
+For language detection, pass in text block to detect method (max 1,000 characters)
 
 ```ruby
 spanish = "hasta luego muchacha"
