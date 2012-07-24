@@ -20,7 +20,7 @@ module MicrosoftTranslator
     def detect(text)
       response = RestClient.get(
         "http://api.microsofttranslator.com/V2/Http.svc/Detect",
-        translate_params(text)
+        detect_params(text)
       )
       parse_xml(response.body)
     end
