@@ -39,7 +39,6 @@ module MicrosoftTranslator
         "to" => to_lang,
         "contentType" => content_type
       })
-      puts hash
       hash
     end
     
